@@ -1,0 +1,49 @@
+==================== 2026-06-07T13:50:45.305038Z | 019ea259-a833-7a92-b6ed-a4e15e5107e7 ====================
+13:50:45.305722 [info ]: Installing dbt project and profile setup
+13:50:45.314687 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+13:50:45.315134 [info ]: Success Project created successfully!
+13:50:45.315201 [info ]: Info Project name: jaffle_shop
+13:50:45.315260 [info ]: Info Project directory: jaffle_shop
+13:50:45.315314 [info ]: Info Setting up your profile...
+13:50:45.315727 [info ]: Info Creating new profile...
+13:51:51.769608 [info ]: No dbt_cloud.yml found - proceeding without cloud pre-population
+13:53:08.637959 [info ]: Success Profile written to /Users/om/.dbt/profiles.yml
+13:53:08.638165 [info ]: Validating profile inputs, adapters, and connection
+
+13:53:08.638218 [info ]: dbt-core 2.0.0-alpha.1
+13:53:08.639037 [info ]: Started loading project
+13:53:08.646445 [info ]: Loading ~/.dbt/profiles.yml
+13:53:08.648529 [info ]: Finished loading project [  0.01s]
+13:53:08.649203 [error]: [InvalidConfig (dbt1005)]: The 'postgres' adapter is not yet supported by dbt Fusion. Supported adapters: snowflake, bigquery, databricks, redshift
+13:53:08.800240 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' with 1 error [2m 23s]
+[0m09:03:13.766240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x109f16ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1ac910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1acfd0>]}
+
+
+============================== 09:03:13.776441 | 24ed2f3d-028f-4f6d-8c0b-717157a925f6 ==============================
+[0m09:03:13.776441 [info ] [MainThread]: Running with dbt=1.8.2
+[0m09:03:13.777096 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/om/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init nyc_taxi_dbt', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:03:13.800623 [debug] [MainThread]: Starter project path: /Users/om/Documents/nyc-taxi-pipeline/venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m09:03:13.813050 [info ] [MainThread]: 
+Your new dbt project "nyc_taxi_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m09:03:13.813819 [info ] [MainThread]: Setting up your profile.
+[0m09:04:07.341408 [info ] [MainThread]: Profile nyc_taxi_dbt written to /Users/om/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m09:04:07.809279 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 54.139477, "process_user_time": 1.615903, "process_kernel_time": 0.35263, "process_mem_max_rss": "101486592", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m09:04:07.810524 [debug] [MainThread]: Command `dbt init` succeeded at 09:04:07.810286 after 54.14 seconds
+[0m09:04:07.811696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a1c88d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b5bf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10a172050>]}
+[0m09:04:07.812560 [debug] [MainThread]: Flushing usage events
